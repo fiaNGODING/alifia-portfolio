@@ -1,0 +1,236 @@
+
+body {
+    background-color: white;
+}
+@media (max-width: 575.98px) {
+  a.title {
+    font-size: 1.3rem;
+  }
+}
+.funnel-display {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.funnel-display2 {
+  font-family: "Ms Madi", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+a.title {
+  color: white;  
+  font-size: 2rem; /* changed from 30px to rem */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap; /* prevent wrapping if desired */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80vw; /* prevent overflowing navbar on small screen */
+  display: inline-block;
+  font-family: "Funnel Display", sans-serif;
+}
+
+a.title:hover {
+    color: pink;
+    transform: scale(1.05);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse:not(.show) {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .navbar-collapse.show {
+        max-height: 300px;
+        transition: max-height 0.5s ease-in;
+    }
+}
+
+.navbar-custom {
+    background: linear-gradient(to right, darkblue, pink, darkblue);
+}
+
+.nav-link.custom-link {
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    font-family: "Funnel Display", sans-serif;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    
+}
+
+.nav-link.custom-link:hover {
+    color: pink;
+    transform: scale(1.05);
+    background-color: darkblue;
+}
+
+.nav-link.custom-link:last-child {
+    margin-right: 0;
+}
+
+.navbar-brand .purple-300-text {
+    color: #b8b3da;
+}
+
+.navbar-toggler-custom {
+    border-color: #7b68ee;
+}
+
+.navbar-toggler-custom:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar-toggler-icon-custom {
+    filter: brightness(0) invert(1) saturate(100%) hue-rotate(180deg) opacity(0.8);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.5), 0 0 0 0.5rem rgba(129, 140, 248, 0.3);
+}
+
+.intro-section {
+  min-height: 70vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.intro-greeting {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 2.5rem;
+  color: darkblue;
+}
+
+.intro-typing {
+  font-size: 1.8rem;
+  min-height: 2.5rem;
+  font-family: "Funnel Display", sans-serif;
+  background-color: darkblue;
+  color: pink;
+}
+
+.intro-summary {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Main container styling */
+.main-container {
+  padding: 0;
+  margin: 0;
+}
+
+/* Generic section styling */
+.section {
+  padding: 80px 20px;
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Funnel Display", sans-serif;
+}
+
+/* Zig-zag backgrounds */
+.bg-darkblue {
+  background-color: #001f4d;
+  color: white;
+}
+
+.bg-pink {
+  background-color: #ffc0cb;
+  color: #2d2d2d;
+}
+
+.bg-white {
+  background-color: white;
+  color: #2d2d2d;
+}
+
+/* Skill cards layout */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skills-card {
+  background-color: white;
+  border: 3px solid darkblue;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skills-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: darkblue;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.skills-card li {
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+/* Project list styling */
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.projects-list li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.projects-list a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.projects-list a:hover {
+  color: #c2185b;
+}
+
+/* Contact section styling */
+.section-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section-content li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-card {
+    width: 90%;
+  }
+}

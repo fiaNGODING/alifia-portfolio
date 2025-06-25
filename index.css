@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(darkblue,pink);
+}
+.hero-container {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+@media (max-width: 576px) {
+  .hero-container::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .funnel-display {
+    font-size: 40px;
+  }
+
+  .funnel-display2 {
+    font-size: 50px;
+  }
+
+  a.btn {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: white;
+  line-height: 1;
+}
+
+.funnel-display {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.funnel-display-hi {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: aliceblue;
+}
+
+.funnel-display2 {
+  font-family: "Ms Madi", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px; 
+  color: pink;
+}
+
+a.btn {
+  font-size: 22px;
+  padding: 10px 25px;
+  font-family: "Funnel Display", sans-serif;
+  border-color: darkblue;
+  border-width: 3px;
+  background-color: darkblue;
+  color: pink;
+  transition: all 0.3s ease; 
+}
+
+a.btn:hover {
+  background-color: pink;
+  color: darkblue;
+  border-color: pink;
+  /* text-decoration: none; */
+}
+

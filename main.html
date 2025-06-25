@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alifia's Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Ms+Madi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-4 shadow-xl navbar-custom">
+        <div class="container-fluid">
+            <!-- Brand/Logo Section -->
+            <a class="funnel-display title" href="#">
+                Alifia's Portfolio ❤︎
+            </a>
+
+            <!-- Hamburger Toggler for Mobile -->
+<!-- Hamburger Toggler for Mobile -->
+<button class="navbar-toggler navbar-toggler-custom d-lg-none d-flex align-items-center justify-content-center" type="button"
+    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span id="icon-hamburger" class="navbar-toggler-icon"></span>
+    <span id="icon-close" class="fs-2 fw-bold text-white d-none">&times;</span>
+</button>
+
+        
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="intro-section text-center d-flex flex-column justify-content-center align-items-center px-4 py-5">
+    <h1 class="intro-greeting mb-3">Hello! My name is <span class="fw-bold funnel-display2">Alifia</span></h1>
+    <h2 class="intro-typing mb-4">
+        I am a <span id="typing-role" class="fw-semibold"></span>
+    </h2>
+    <p class="intro-summary text-muted funnel-display" style="max-width: 700px;">
+        A Computer Science graduate from Bina Nusantara University with hands-on experience in backend development,
+        API creation, and database optimization. Passionate about building scalable systems and continuously exploring new technologies.
+    </p>
+    </section>
+
+    <!-- <main class="container mx-auto p-6 md:p-8">
+        <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4">Welcome to Your Portfolio</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                This is a placeholder for your portfolio content. The navbar above demonstrates a responsive design,
+                transforming into a burger menu on smaller screens. Feel free to explore and customize!
+            </p>
+            <p class="mt-4 text-gray-600">
+                On a desktop, you'll see the full navigation links. Resize your browser window or view this on a mobile device
+                to see the hamburger menu in action.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-purple-700 mb-3">About Me</h3>
+                <p class="text-gray-700">
+                    Passionate web developer with a keen eye for design and user experience.
+                    I specialize in creating dynamic and responsive web applications.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-green-700 mb-3">My Projects</h3>
+                <p class="text-gray-700">
+                    Explore a collection of my recent works, including interactive web apps and design prototypes.
+                    Each project showcases different skills and technologies.
+                </p>
+            </div>
+        </section>
+    </main> -->
+
+    <main class="main-container">
+  <!-- Section 1: About Me -->
+  <section class="section bg-darkblue text-white">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m Alifia Sembada Anggianto, a Computer Science graduate from Bina Nusantara University (GPA: 3.86),
+        already received Graduation Letter and awaiting for Graduation Ceremony. I have hands-on experience in backend development and database management,
+        gained from a one-year internship at PT Asuransi Astra Buana as an Application Developer. I’m passionate about
+        API development, scalable backend systems, and have a growing interest in database streaming.
+      </p>
+      <p>
+        I also have leadership and teaching experience as a Freshmen Leader and Education Mentor, mentoring students
+        in programming and computer science fundamentals. I’ve volunteered as a teaching mentor and presented a paper
+        at the ICOCSETI 2025 Conference on stock prediction using deep learning.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Skills -->
+  <section class="section bg-pink text-dark">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skills-card">
+          <h3>Languages</h3>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>SQL (MS SQL Server)</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <!-- Frameworks -->
+        <div class="skills-card">
+          <h3>Frameworks</h3>
+          <ul>
+            <li>.NET</li>
+            <li>RapidMiner</li>
+            <li>Apache Hive</li>
+            <li>ArcGIS</li>
+          </ul>
+        </div>
+        <!-- Tools -->
+        <div class="skills-card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>UI/UX Design</li>
+            <li>Microsoft SQL Server</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Projects -->
+  <section class="section bg-white text-dark">
+    <div class="section-content">
+      <h2 style="color: darkblue; background-color: pink; display: inline-block; padding: 0.2em 0.4em;">
+            Projects
+        </h2>
+      <p style="color: darkblue;">Explore my work below:</p>
+      <ul class="projects-list">
+        <li><a href="project1.html">Health App Backend API (Asuransi Astra Buana Internship)</a></li>
+        <li><a href="project2.html">Stock Price Prediction Paper (ICOCSETI 2025)</a></li>
+        <li><a href="project3.html">Student Mentoring & Academic Support (BINUS)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 4: Contact -->
+  <section class="section bg-darkblue text-white">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <p>You can reach me at:</p>
+      <ul>
+        <li>Email: <a href="mailto:alifiasembadaa@gmail.com" class="text-white">alifiasembadaa@gmail.com</a></li>
+        <li>Phone: +62 821 2290 8270</li>
+        <li>Location: West Jakarta, Indonesia</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eP7yWaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="navbar.js"></script>
+
+<script>
+  const roles = ["graduate student", "code enthusiast", "design lover", "backend developer", "curious learner"];
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let isPaused = false;
+
+  const typingElement = document.getElementById("typing-role");
+
+  function typeRole() {
+    const currentRole = roles[roleIndex];
+
+    if (!isDeleting) {
+      // Typing
+      typingElement.textContent = currentRole.substring(0, charIndex++);
+      if (charIndex > currentRole.length) {
+        isPaused = true;
+        setTimeout(() => {
+          isDeleting = true;
+          isPaused = false;
+        }, 1200); // pause after fully typed
+      }
+    } else {
+      // Deleting
+      typingElement.textContent = currentRole.substring(0, charIndex--);
+      if (charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+    }
+
+    if (!isPaused) {
+      const delay = isDeleting ? 50 : 100;
+      setTimeout(typeRole, delay);
+    } else {
+      setTimeout(typeRole, 50); // keep calling during pause, but do nothing
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", typeRole);
+</script>
+
+
+</body>
+</html>
