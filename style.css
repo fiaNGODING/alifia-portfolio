@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: white;
 }
@@ -336,4 +339,28 @@ a.title:hover {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Go to Top Button */
+.go-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba(99, 102, 241, 0.5);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.go-top-button:hover {
+  background-color: pink;
+  color: darkblue;
 }

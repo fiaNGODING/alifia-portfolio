@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark p-4 shadow-xl navbar-custom">
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark p-4 shadow-xl navbar-custom">
         <div class="container-fluid">
             <!-- Brand/Logo Section -->
             <a class="funnel-display title" href="#">
@@ -35,13 +35,13 @@
                         <a class="nav-link custom-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-link" href="#about">Experiences</a>
+                        <a class="nav-link custom-link" href="#experiences">Experiences</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link custom-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-link" href="#contact">Contact</a>
@@ -85,7 +85,7 @@
   </section> -->
 
   <!-- Section 1: About Me (Vertical Timeline with Icons and Animation) -->
-<section class="section bg-darkblue text-white">
+<section id="experiences" class="section bg-darkblue text-white">
   <div class="section-content">
     <h2>Experiences</h2>
     <p>Hover to see details :)</p>
@@ -176,7 +176,7 @@
 
 
   <!-- Section 2: Skills -->
-  <section class="section bg-pink text-dark">
+  <section id="skills" class="section bg-pink text-dark">
     <div class="section-content">
       <h2>Skills</h2>
       <div class="skills-grid">
@@ -220,7 +220,7 @@
   </section>
 
   <!-- Section 3: Projects -->
-  <section class="section bg-white text-dark">
+  <section id="projects" class="section bg-white text-dark">
     <div class="section-content">
       <h2 style="color: darkblue; background-color: pink; display: inline-block; padding: 0.2em 0.4em;">
             Projects
@@ -235,7 +235,7 @@
   </section>
 
   <!-- Section 4: Contact -->
-  <section class="section bg-darkblue text-white">
+  <section id="contact" class="section bg-darkblue text-white">
     <div class="section-content">
       <h2>Contact</h2>
       <p>You can reach me at:</p>
@@ -295,6 +295,25 @@
   document.addEventListener("DOMContentLoaded", typeRole);
 </script>
 
+<!-- Go to Top Button -->
+<a id="goTopBtn" href="#home" class="go-top-button" title="Back to top">▲</a>
+
+<script>
+  const goTopBtn = document.getElementById("goTopBtn");
+
+  window.addEventListener("scroll", () => {
+    const experiences = document.getElementById("experiences");
+    const triggerPosition = experiences.offsetTop;
+
+    if (window.scrollY >= triggerPosition - 100) {
+      goTopBtn.style.opacity = "1";
+      goTopBtn.style.visibility = "visible";
+    } else {
+      goTopBtn.style.opacity = "0";
+      goTopBtn.style.visibility = "hidden";
+    }
+  });
+</script>
 
 </body>
 </html>
