@@ -380,3 +380,74 @@ a.title:hover {
   background-color: pink;
   color: darkblue;
 }
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-bubble {
+  width: 120px;
+  height: 120px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  font-family: "Funnel Display", sans-serif;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-bubble:hover {
+  transform: scale(1.05);
+  background-color: pink;
+  color: darkblue;
+}
+
+
+@media (max-width: 768px) {
+  .project-bubble {
+    width: 90px;
+    height: 90px;
+    font-size: 12px;
+  }
+
+  .projects-grid {
+    gap: 15px;
+  }
+}
+
+.project-tooltip {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-tooltip {
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    color: darkblue;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .project-bubble-wrapper:hover .project-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
